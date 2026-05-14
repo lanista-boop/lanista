@@ -1,0 +1,112 @@
+/* 기본 여백 제거 및 글꼴 설정 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", Arial, sans-serif;
+  background: #f3f5f7;
+  color: #1f2937;
+}
+
+/* 앱 전체를 가운데 정렬하고 최대 너비 제한 */
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-top: 0;
+  color: #4b5563;
+}
+
+/* 카드 형태로 섹션 구분 */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+/* 라벨 + 입력창을 깔끔하게 배치 */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.result-card p {
+  margin: 8px 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  padding: 10px 6px;
+}
+
+/* 모바일 화면에서 글자/여백 균형 조정 */
+@media (max-width: 480px) {
+  .app {
+    padding: 14px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
